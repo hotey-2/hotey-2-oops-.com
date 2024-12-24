@@ -1,135 +1,70 @@
-/* General styling */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* General styles for all devices */
 body {
   font-family: Arial, sans-serif;
-  background-color: #121212;  /* Dark background */
-  color: #e0e0e0;  /* Light gray text */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  flex-direction: column;
-}
-
-.container {
-  width: 80%;
-  max-width: 800px;
-  background-color: #1e1e1e;  /* Dark container background */
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); /* Dark shadow */
+  margin: 0;
+  padding: 0;
+  background-color: #121212; /* Black theme */
+  color: #ffffff;
 }
 
 h1 {
   text-align: center;
-  color: #4CAF50;  /* Bright green text for the shop name */
-  font-size: 2rem;
-  margin-bottom: 20px;
+  font-size: 2rem; /* Larger font size */
+  margin-top: 10px;
 }
 
-h2 {
-  color: #e0e0e0;  /* Light gray for headings */
-  margin-top: 20px;
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-input[type="text"], input[type="number"], button, select {
+input, select, button {
   width: 100%;
+  margin-bottom: 10px;
   padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #333;  /* Dark border */
-  border-radius: 4px;
-  font-size: 1rem;
-  background-color: #333;  /* Dark background for inputs */
-  color: #e0e0e0;  /* Light text color for input fields */
+  border-radius: 5px;
+  border: 1px solid #333;
+  font-size: 1.1rem; /* Increased input font size */
 }
 
 button {
-  background-color: #4CAF50;  /* Green button */
+  background-color: #007BFF;
   color: white;
-  cursor: pointer;
-  font-size: 1.1rem;
   border: none;
-  margin-top: 10px;
-  padding: 12px;
-  border-radius: 4px;
+  cursor: pointer;
 }
 
 button:hover {
-  background-color: #45a049;  /* Slightly darker green on hover */
+  background-color: #0056b3;
 }
 
-h3 {
-  color: #4CAF50;  /* Bright green text for total price */
-  font-size: 1.2rem;
-}
-
-#material-list {
-  list-style-type: none;
-  padding: 0;
-}
-
-#material-list li {
-  background-color: #2a2a2a;  /* Darker background for each material */
-  border: 1px solid #444;  /* Darker border */
-  padding: 10px;
-  margin-bottom: 5px;
-  border-radius: 4px;
-  color: #e0e0e0;  /* Light gray text for material items */
-}
-
-#total {
+table {
+  width: 100%;
   margin-top: 20px;
-  font-size: 1.2rem;
+  border-collapse: collapse;
 }
 
-#download-link {
-  display: inline-block;
-  background-color: #007BFF;  /* Blue background for download link */
-  color: white;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 4px;
-  margin-top: 20px;
+table, th, td {
+  border: 1px solid #ffffff;
 }
 
-#download-link:hover {
-  background-color: #0056b3;  /* Darker blue on hover */
-}
-
-/* Footer styling */
-footer {
-  text-align: center;
-  margin-top: 40px;
-  font-size: 1rem;
-  color: #e0e0e0;  /* Light gray footer text */
-}
-
-footer p {
-  margin: 0;
-  font-style: italic;
-}
-
-/* Styling for Quantity and Unit */
-.quantity-container {
-  display: flex;
-  justify-content: space-between;
-}
-
-#quantity {
-  width: 75%;
-}
-
-#unit {
-  width: 20%;
+th, td {
   padding: 10px;
-  font-size: 1rem;
-  border-radius: 4px;
-  border: 1px solid #333;  /* Dark border */
-  background-color: #333;  /* Dark background for select */
-  color: #e0e0e0;  /* Light text color */
+  text-align: left;
+}
+
+/* Add responsiveness */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  input, select, button {
+    font-size: 1rem;
+  }
+
+  th, td {
+    font-size: 0.9rem;
+  }
 }
