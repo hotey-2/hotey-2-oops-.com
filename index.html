@@ -4,11 +4,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>New Light Electrical and Hardware - Material Calculator</title>
-  <link rel="stylesheet" href="style2.css">
+  <link rel="stylesheet" href="style2.css"> <!-- Linked to the updated CSS file -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Include Chart.js Library -->
 </head>
 <body>
   <div class="container">
-    <!-- Shop Name -->
     <h1>New Light Electrical and Hardware</h1>
 
     <!-- Customer Details Form -->
@@ -20,14 +20,7 @@
     <h2>Enter Material</h2>
     <form id="material-form">
       <input type="text" id="material-name" placeholder="Material Name" required>
-      <div class="quantity-container">
-        <input type="number" id="quantity" placeholder="Quantity" required>
-        <select id="unit" required>
-          <option value="litre">Litre</option>
-          <option value="ml">ml</option>
-          <option value="kg">Kg</option>
-        </select>
-      </div>
+      <input type="number" id="quantity" placeholder="Quantity" required>
       <input type="number" id="price" placeholder="Price per unit" required>
       <button type="submit">Add Material</button>
     </form>
@@ -46,6 +39,12 @@
 
     <!-- Download Invoice -->
     <a id="download-link" style="display:none" download="invoice.txt">Download Invoice</a>
+
+    <!-- Sales Chart to Track Last Month's Sales -->
+    <h2>Sales by Month (Last Months)</h2>
+    <div>
+      <canvas id="sales-chart" width="400" height="200"></canvas>
+    </div>
   </div>
 
   <!-- Footer with "Designed by Bharat Sharma" -->
@@ -53,6 +52,9 @@
     <p>Designed by Bharat Sharma</p>
   </footer>
 
-  <script src="script2.js"></script>
+  <script src="script2.js"></script> <!-- Linked to the updated JavaScript file -->
 </body>
 </html>
+
+
+   
